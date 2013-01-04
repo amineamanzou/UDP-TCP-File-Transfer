@@ -2,7 +2,7 @@
 # File : Makefile
 # Author: Amine Amanzou
 #
-## Created on 4 mai 2013
+## Created on 4 janvier 2013
 #
 #
 #
