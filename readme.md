@@ -19,8 +19,20 @@ A unix distribution and a C compiler : gcc.
 > 1. Navigate to the right folder UDP or FTP with a console.
 > 2. Enter :
 ```bash
+<<<<<<< HEAD
 Make install
+=======
+make 
+>>>>>>> Udpating documentation
 ```
 
 ## Ready !
 You can now use the program client to send your file and server to receive the file.
+<<<<<<< HEAD
+=======
+### Example session
+```bash
+./client <IP-server> <port> <filetosend>
+./server <port>
+```
+>>>>>>> Udpating documentation
