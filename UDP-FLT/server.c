@@ -122,7 +122,7 @@ int create_server_socket (int port){
 	sfd = socket(AF_INET,SOCK_DGRAM,0);
 	if (sfd == -1){
         perror("socket fail");
-        return EXIT_SUCCESS;
+        return EXIT_FAILURE;
 	}
     
     //preparation de l'adresse de la socket destination
