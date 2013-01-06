@@ -1,5 +1,5 @@
 /*
- * File : client.c
+ * File : server.c
  * Author : Amine Amanzou
  *
  * Created : 4th January 2013
@@ -40,14 +40,15 @@ int create_server_socket (int port);
 struct sockaddr_in sock_serv,clt;
 
 int main (int argc, char**argv){
+    //Descripteur
 	int fd, sfd;
+    
 	char buf[BUFFERT];
-	off_t count=0, n;//long
-	struct stat buffer;
-	char dest[INET_ADDRSTRLEN];
+	off_t count=0, n; // long type
 	char filename[256];
     unsigned int l=sizeof(struct sockaddr_in);
 	
+    // Variable pour la date
 	time_t intps;
 	struct tm* tmi;
     
@@ -87,6 +88,8 @@ int main (int argc, char**argv){
     
 	printf("Nombre d'octets transférés : %lld \n",count);
     
+    close(sfd);
+    close(fd);
 	return EXIT_SUCCESS;
 }
 

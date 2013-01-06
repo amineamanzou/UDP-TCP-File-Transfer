@@ -66,8 +66,6 @@ int main (int argc, char**argv){
 	}
 	else
 		sz=buffer.st_size;
-	
-    
     
 	//preparation de l'envoie
 	bzero(&buf,BUFFERT);
@@ -100,6 +98,8 @@ int main (int argc, char**argv){
 	printf("Sur une taille total de : %lld \n",sz);
 	printf("Pour une durée total de : %ld.%d \n",delta.tv_sec,delta.tv_usec);
     
+    close(sfd);
+    close(fd);
 	return EXIT_SUCCESS;
 }
 
