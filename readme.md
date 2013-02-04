@@ -29,3 +29,5 @@ You can now use the program client to send your file and server to receive the f
 ./client <IP-server> <port> <filetosend>
 ./server <port>
 ```
+
+Et Voila un test
